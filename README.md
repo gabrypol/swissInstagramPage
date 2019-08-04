@@ -8,7 +8,7 @@
 
 # How to use the Swiss Instagram Page:
 1. Square view:
-![](readmeImages/image01.mov)
+![](readmeImages/image01.png)
 
 2. Cascade view:
 ![](readmeImages/image02.png)
