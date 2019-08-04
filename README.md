@@ -7,9 +7,9 @@
 
 
 # How to use the Swiss Instagram Page:
-1. Square view:
+1. Press on the "Square" button to load the page in Square view:
 ![](readmeImages/image01.png)
 
-2. Cascade view:
+2. Press on the "Cascade" button to load the page in Cascade view:
 ![](readmeImages/image02.png)
 
