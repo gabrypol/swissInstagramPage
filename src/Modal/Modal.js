@@ -9,6 +9,9 @@ import {ProfileImage} from "../Profile/ProfileImage";
 const OverFlowHidden = createGlobalStyle`
     body {
         overflow: hidden;
+        @media (max-width: 1000px) {
+          overflow: scroll;
+        }
     }
 `
 
@@ -16,9 +19,13 @@ const ModalStyled = styled.div`
     position: absolute;
     background: #fff;
     top: ${({top}) => top}px;
-    left: 25%;
-    right: 25%;
-    width: 600px;
+    left: 10%;
+    right: 10%;
+    @media (max-width: 1000px) {
+      left: 0;
+      right: 0;
+      bottom: 10%;
+    }
 `
 
 export function Modal({ match, history }) {
@@ -45,20 +52,18 @@ export function Modal({ match, history }) {
         }}
       >
         <ModalStyled
-            top={window.scrollY + (window.innerHeight / 2) - 250}
+            top={window.scrollY + (window.innerHeight * 0.05) }
         >
             <OverFlowHidden />
             <PostGrid>
-                <Image inModal index={image.id} />
+                <Image index={image.id} />
                 <InfoGrid>
                     <MiniUserGrid>
                         <ProfileImage mini />
                         <h3> switzerland </h3>
                     </MiniUserGrid>
-                    <div> 
-                        <h2>{image.title}</h2>
-                    </div>
-                    <div> 45 Likes </div>
+                    <div> Comments </div>
+                    <div><strong>589,453 likes</strong></div>
                 </InfoGrid>
             </PostGrid>
         </ModalStyled>

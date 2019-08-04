@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import {Modal} from './Modal/Modal';
-import Posts from "./Posts";
 import {Gallery} from "./Gallery/Gallery";
 
 // This example shows how to render two different screens
@@ -55,7 +54,7 @@ class ModalSwitch extends Component {
         <Switch location={isModal ? this.previousLocation : location}>
           <Route exact path="/" component={Home} />
           <Route path="/gallery" component={Gallery} />
-          <Route path="/img/:id" component={ImageView} />
+          <Route path="/img/:id" component={Modal} />
         </Switch>
         {isModal ? <Route path="/img/:id" component={Modal} /> : null}
       </div>
@@ -64,42 +63,24 @@ class ModalSwitch extends Component {
 }
 
 export const Image = styled.div`
-  width: 305px;
-  height: 305px;
-  background: no-repeat center/150% url(/img/${({index}) => index}.jpeg);
-  ${({inModal}) => !inModal && css`
-    :hover {
-      opacity: 0.7;
-    }
-  `}
+  background: no-repeat center url(/img/${({index}) => index}.jpeg);
+  background-size: cover;
+  height: ${(window.innerHeight * 0.9)}px;
 `
 
 function Home() {
   return (
-    <div>
-      <Link to="/gallery">Visit the Gallery</Link>
-      <h2>Featured Images</h2>
+    <div >
+      <Link to="/gallery"><h1>Switzerland IG profile</h1></Link>
+      <h2>Bern and Zürich:</h2>
       <ul>
         <li>
-          <Link to="/img/2">Tomato</Link>
+          <Link to="/img/1">Bern: the capital of Switzerland</Link>
         </li>
         <li>
-          <Link to="/img/4">Crimson</Link>
+          <Link to="/img/5">Zürich: the biggest city in Switzerland</Link>
         </li>
       </ul>
-    </div>
-  );
-}
-
-function ImageView({ match }) {
-  let image = Posts[parseInt(match.params.id, 10) - 1];
-
-  if (!image) return <div>Image not found</div>;
-
-  return (
-    <div>
-      <h1>{image.title}</h1>
-      <Image index={image.id} />
     </div>
   );
 }

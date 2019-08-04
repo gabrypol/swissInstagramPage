@@ -5,11 +5,18 @@ import {ProfileImage} from "./ProfileImage";
 const UserGridStyled = styled.div`
     display: grid;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     grid-template-areas: "photo name"
                          "photo label"
                          "photo description";
+    @media (max-width: 1000px) {
+        grid-template-areas: "photo name"
+                             "label label"
+                             "description description";
+        grid-template-columns: auto auto;
+        grid-gap: 15px;
+    }
 `
 
 export const MiniUserGrid = styled.div`
@@ -21,20 +28,31 @@ export const MiniUserGrid = styled.div`
 
 const Photo = styled.div`
     grid-area: photo;
+    justify-self: center;
 `
 
 const Name = styled.div`
     grid-area: name;
     font-size: 35px;
+    align-self: center;
 `
 
 const Label = styled.div`
     grid-area: label;
+    @media (max-width: 1000px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 `
 
 const Description = styled.div`
     grid-area: description;
     max-width: 400px;
+    @media (max-width: 1000px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+   
 `
 
 export default function() {
