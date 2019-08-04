@@ -7,11 +7,9 @@
 
 
 # How to use the Swiss Instagram Page:
-0. Test
+1. Square view:
 ![](readmeImages/image01.mov)
 
-1. Test
+2. Cascade view:
 ![](readmeImages/image02.png)
 
-2. Test
-![](readmeImages/image03.png)
