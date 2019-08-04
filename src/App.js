@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import styled from "styled-components";
 import {Modal} from './Modal/Modal';
 import {Gallery} from "./Gallery/Gallery";
@@ -52,7 +52,7 @@ class ModalSwitch extends Component {
     return (
       <div>
         <Switch location={isModal ? this.previousLocation : location}>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Gallery} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/img/:id" component={Modal} />
         </Switch>
@@ -67,23 +67,6 @@ export const Image = styled.div`
   background-size: cover;
   height: ${(window.innerHeight * 0.9)}px;
 `
-
-function Home() {
-  return (
-    <div >
-      <Link to="/gallery"><h1>Switzerland IG profile</h1></Link>
-      <h2>Bern and Zürich:</h2>
-      <ul>
-        <li>
-          <Link to="/img/1">Bern: the capital of Switzerland</Link>
-        </li>
-        <li>
-          <Link to="/img/5">Zürich: the biggest city in Switzerland</Link>
-        </li>
-      </ul>
-    </div>
-  );
-}
 
 function ModalGallery() {
   return (
