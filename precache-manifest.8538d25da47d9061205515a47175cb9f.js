@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62992b1e08df2e6beb2cb939053cb3f0",
+    "revision": "a69b923a42d10624e695d50c5c421d97",
     "url": "/swissInstagramPage/index.html"
   },
   {
-    "revision": "14bc7ac5d08f995b8210",
+    "revision": "250af828559e3253cb99",
     "url": "/swissInstagramPage/static/css/main.4357ba7c.chunk.css"
   },
   {
-    "revision": "c3358893c0b5894acb54",
-    "url": "/swissInstagramPage/static/js/2.4ff9afb0.chunk.js"
+    "revision": "7498003fbe48ca0e7d58",
+    "url": "/swissInstagramPage/static/js/2.2f9e3e49.chunk.js"
   },
   {
-    "revision": "14bc7ac5d08f995b8210",
-    "url": "/swissInstagramPage/static/js/main.8236a7c8.chunk.js"
+    "revision": "250af828559e3253cb99",
+    "url": "/swissInstagramPage/static/js/main.830b412f.chunk.js"
   },
   {
     "revision": "9af7fba3d26b10ad295a",
