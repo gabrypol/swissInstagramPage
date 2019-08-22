@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/swissInstagramPage/static/css/main.4357ba7c.chunk.css",
-    "main.js": "/swissInstagramPage/static/js/main.0865c1c0.chunk.js",
-    "main.js.map": "/swissInstagramPage/static/js/main.0865c1c0.chunk.js.map",
+    "main.js": "/swissInstagramPage/static/js/main.02cd6fdb.chunk.js",
+    "main.js.map": "/swissInstagramPage/static/js/main.02cd6fdb.chunk.js.map",
     "runtime~main.js": "/swissInstagramPage/static/js/runtime~main.48f04078.js",
     "runtime~main.js.map": "/swissInstagramPage/static/js/runtime~main.48f04078.js.map",
     "static/js/2.2f9e3e49.chunk.js": "/swissInstagramPage/static/js/2.2f9e3e49.chunk.js",
     "static/js/2.2f9e3e49.chunk.js.map": "/swissInstagramPage/static/js/2.2f9e3e49.chunk.js.map",
     "index.html": "/swissInstagramPage/index.html",
-    "precache-manifest.75b733716c607ee6e83cf0be4bdc7e9e.js": "/swissInstagramPage/precache-manifest.75b733716c607ee6e83cf0be4bdc7e9e.js",
+    "precache-manifest.2190a3c6de9a0e7a21dc79cfb62366db.js": "/swissInstagramPage/precache-manifest.2190a3c6de9a0e7a21dc79cfb62366db.js",
     "service-worker.js": "/swissInstagramPage/service-worker.js",
     "static/css/main.4357ba7c.chunk.css.map": "/swissInstagramPage/static/css/main.4357ba7c.chunk.css.map"
   }
