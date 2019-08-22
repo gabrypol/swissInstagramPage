@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Switch, Route} from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import styled from "styled-components";
-import {Modal} from './Modal/Modal';
-import {Gallery} from "./Gallery/Gallery";
+import { Modal } from "./Modal/Modal";
+import { Gallery } from "./Gallery/Gallery";
 
 // This example shows how to render two different screens
 // (or the same screen in a different context) at the same url,
@@ -63,10 +63,10 @@ class ModalSwitch extends Component {
 }
 
 export const Image = styled.div`
-  background: no-repeat center url(/img/${({index}) => index}.jpeg);
+  background: no-repeat center url(img/${({ index }) => index}.jpeg);
   background-size: cover;
-  height: ${(window.innerHeight * 0.9)}px;
-`
+  height: ${window.innerHeight * 0.9}px;
+`;
 
 function ModalGallery() {
   return (
