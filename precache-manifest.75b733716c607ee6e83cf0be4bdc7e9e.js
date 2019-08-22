@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da1a6781f40c8f1fcab08c92beef55b1",
+    "revision": "257ce90bfa80c875b2cb4dc2db79cd21",
     "url": "/swissInstagramPage/index.html"
   },
   {
-    "revision": "ffdef84697a159f29675",
+    "revision": "4cc00dafdce7e35b8b1a",
     "url": "/swissInstagramPage/static/css/main.4357ba7c.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swissInstagramPage/static/js/2.2f9e3e49.chunk.js"
   },
   {
-    "revision": "ffdef84697a159f29675",
-    "url": "/swissInstagramPage/static/js/main.5fb7758d.chunk.js"
+    "revision": "4cc00dafdce7e35b8b1a",
+    "url": "/swissInstagramPage/static/js/main.0865c1c0.chunk.js"
   },
   {
     "revision": "9af7fba3d26b10ad295a",
